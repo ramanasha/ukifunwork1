@@ -27,18 +27,17 @@ $(document).ready(function() {
          });
     });
 
+    SC.stream('/tracks/17775198',function(sound){
+         $('#start3').click(function(e) {
+           e.preventDefault();
+           sound.start();
+         });
 
-        SC.stream('/tracks/17775198',function(sound){
-             $('#start3').click(function(e) {
-               e.preventDefault();
-               sound.start();
-             });
-
-             $('#stop3').click(function(e) {
-               e.preventDefault();
-               sound.stop();
-             });
-        });
+         $('#stop3').click(function(e) {
+           e.preventDefault();
+           sound.stop();
+         });
+    });
 
     SC.stream('/tracks/17775198',function(sound){
          $('#start4').click(function(e) {
